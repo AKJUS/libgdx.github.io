@@ -136,7 +136,7 @@ Bitness: `32`(default), `64`, `128`
 
 Note: iOS and Android don't accept Architecture or Bitness and will only generate one task.  
 
-Every new target will create a new gradle task in the pattern `jnigenBuild<platform><architectur><bitness>`, however default values will be ignored in the task name.  
+Every new target will create a new gradle task in the pattern `jnigenBuild<platform><architecture><bitness>`, however default values will be ignored in the task name.  
 
 Executing these tasks will build the native library for the specified platform.  
 
