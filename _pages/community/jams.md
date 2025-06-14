@@ -16,20 +16,24 @@ toc_sticky: false
 
 {% include breadcrumbs.html %}
 
-# Upcoming
-If you want to stay up to date – join the official [libGDX Discord](/community/discord/)!
+# Ongoing
 
 ## June 2025
 Summer Throwdown Jam  
 All entries must feature an epic boss fight.  
 No suggestions.  
-Theme voting will be done via discord.  
-Voting: 12th - 14th  
+Theme: **Nature's Revenge**    
+Voting: 12th – 14th  
 Jam: 15th – 21st
 
+<big>[Enter here!](https://itch.io/jam/libgdx-jam-33)</big>
+
+# Upcoming
+If you want to stay up to date – join the official [libGDX Discord](/community/discord/)!
+
 ## September 2025
-Suggestions: 7th - 9th  
-Voting: 11th - 13th  
+Suggestions: 7th – 9th  
+Voting: 11th – 13th  
 Jam: 14th – 20th
 
 ## December 2025
