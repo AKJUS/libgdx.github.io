@@ -32,7 +32,7 @@ There are also a lot of other improvements in the works, which may not be not bi
   </tr>
   <tr>
     <td><h4>Box2D Update</h4>
-    <br>In July 2020, the original <a href="https://github.com/erincatto/box2d">Box2D</a> received its first update in over 6 years! Now we're working to include those changes in libGDX.<sup><a href="https://github.com/libgdx/libgdx/issues/5948">1</a>, <a href="https://github.com/libgdx/gdx-box2d">1</a></sup></td>
+    <br>In July 2020, the original <a href="https://github.com/erincatto/box2d">Box2D</a> received its first update in over 6 years! Now we're working to include those changes in libGDX.<sup><a href="https://github.com/libgdx/libgdx/issues/5948">1</a>, <a href="https://github.com/libgdx/gdx-box2d">2</a></sup></td>
     <td>{% include status.html is='wip' %}</td>
   </tr>
   <tr>
