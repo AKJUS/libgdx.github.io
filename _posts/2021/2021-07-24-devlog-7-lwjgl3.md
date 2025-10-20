@@ -20,7 +20,7 @@ tags:
 categories: news
 ---
 
-_(Last updated: 15 June 2025)_
+_(Last updated: 20 October 2025)_
 
 In the next release of libGDX we are switching our default desktop backend from LWJGL 2 to LWJGL 3. This Status Report is meant to provide some background information on this change.
 
@@ -82,12 +82,10 @@ You can either run the JVM with the [`-XstartOnFirstThread`](https://github.com/
     jvmArgs = ['-XstartOnFirstThread']
 ```
 
-Alternatively, you can use an [experimental](https://github.com/libgdx/libgdx/pull/7361#issuecomment-1986915854) implementation of the [GLFW library](https://javadoc.lwjgl.org/org/lwjgl/glfw/package-summary.html#using-glfw-on-macos-heading) by adding this code snippet to the start of your `main()` method:
+Alternatively, you can use an [experimental](https://github.com/libgdx/libgdx/pull/7361#issuecomment-1986915854) implementation of the [GLFW library](https://javadoc.lwjgl.org/org/lwjgl/glfw/package-summary.html#using-glfw-on-macos-heading) by adding this line to the very start of your `main()` method:
 
 ```java
-if (SharedLibraryLoader.isMac) {
-    Configuration.GLFW_LIBRARY_NAME.set("glfw_async");
-}
+Lwjgl3ApplicationConfiguration.useGlfwAsync();
 ```
 
 A third option, especially viable  for _outside of your development environment_, is to just programatically restart the JVM if the argument is not present (see [here](https://github.com/crykn/guacamole/blob/82a66078e190a563afd60de8804274904744d4d2/gdx-desktop/src/main/java/de/damios/guacamole/gdx/StartOnFirstThreadHelper.java#L78) for a simple example).
