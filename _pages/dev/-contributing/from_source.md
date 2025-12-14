@@ -17,9 +17,10 @@ sidebar:
 {% include breadcrumbs.html %}
 
 # Setting the Project Up
-If you want to work on the code of libGDX itself, you need to get it set up on your local machine. For this, IntelliJ IDEA/Android Studio is strongly recommended as IDE!
+If you want to work on the code of libGDX itself or try out a PR, you need to get the libGDX code base set up on your local machine. If you plan on doing any modifications, we strongly recommend IntelliJ IDEA or Android Studio as IDEs, since they are better suited for working with Gradle and Android.
 
 If you want to submit code back to the project, please also take a moment to review our [guidelines](/dev/contributing/).
+{: .notice--info}
 
 1. Fork libGDX to your own Github account.
 2. Clone the project to your machine either via your IDE or the command line:
@@ -36,9 +37,9 @@ If you want to submit code back to the project, please also take a moment to rev
 
    Please note that the `fetchNatives` and the `build` tasks [need to be called separately](https://github.com/libgdx/libgdx/pull/7246#issuecomment-1807271546).
    {: .notice--warning}
-5. Importing the project:
+5. If you want to modifiy the code, import it into your favorite IDE:
 
-    a) **Via IntelliJ IDEA/Android Studio:**
+    a) **IntelliJ IDEA/Android Studio:**
 
      - File -> Open -> libGDX root `build.gradle`
      - Import all projects
@@ -47,7 +48,7 @@ If you want to submit code back to the project, please also take a moment to rev
      - Make sure the Gradle sync succeeds, if not resolve the issues at hand.
      - Go into preferences and turn off configure on demand
 
-    b) **Via Eclipse:** File -> Import -> Gradle -> Gradle project
+    b) **Eclipse:** File -> Import -> Gradle -> Gradle project
 
      If you don't want to use Gradle in Eclipse, executing `./gradlew cleanEclipse eclipse` will generate the necessary project files.
 
@@ -102,11 +103,11 @@ You can install a libGDX snapshot version to your local Maven repository by runn
 ```
 ./gradlew publishToMavenLocal
 ```
-This will build and install libGDX and all core components to your local maven repository with the current version declared in the gradle.properties file plus the SNAPSHOT qualifier (in our example `1.12.0.1-SNAPSHOT`).
+This will build and install libGDX and all core components to your local maven repository with the current version declared in the gradle.properties file plus the SNAPSHOT qualifier (in our example `1.12.0.1-SNAPSHOT`). To use this version in your project, make sure that its build.gradle file includes `mavenLocal()` in the `repositories` section at the top.
 
 ## Publishing a Release version
 
-Publishing properties are defined in the `publish.gradle` file. To install a release version in your local Maven you can override the default repository by creating a file called `override.gradle` in the root folder with the following content
+Publishing properties are defined in the `publish.gradle` file. To install a release version (i.e. a version that is not postfixed with `-SNAPSHOT`) in your local Maven, you can override the default repository by creating a file called `override.gradle` in the root folder with the following content
 ```
 configure([
         project(":gdx"),
