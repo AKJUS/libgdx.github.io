@@ -19,6 +19,32 @@ toc_sticky: false
 # Upcoming
 If you want to stay up to date – join the official [libGDX Discord](/community/discord/)!
 
+## March 2026
+Suggestions: 8th – 10th  
+Voting: 12th – 14th  
+Jam: 15th – 21st
+
+## June 2026
+***The Pixel Playground Jam***  
+Dust off your cartridges and warm up your CRTs! This is the jam where you create a low-res masterpiece. All entries must fully embrace the visual and audio limitations of the 8-Bit era. Get ready to pixelate!
+
+No suggestions.  
+Theme voting will be done via Discord.  
+Have fun!
+
+Voting: 11th – 13th  
+Jam: 14th – 20th
+
+## September 2026
+Suggestions: 6th – 8th  
+Voting: 10th – 12th  
+Jam: 13th – 19th
+
+## December 2026
+Suggestions: Nov. 29th – Dec. 1st  
+Voting: 3rd – 5th  
+Jam: 6th – 12th
+
 # Rules
 We encourage camaraderie, teamwork, and good sportsmanship with a side of well-intentioned buffoonery. Nonetheless, there are some rules to be followed:
 
