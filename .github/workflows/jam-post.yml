@@ -111,7 +111,7 @@ jobs:
 
       - name: Retrieve thumbnail
       #  run: curl -o /assets/images/posts/${{env.DATE}}/header.jpg --create-dirs https://img.youtube.com/vi/${{github.event.inputs.video-id}}/mqdefault.jpg
-        uses: suisei-cn/actions-download-file@6d20a8a11783bc479f85ccb2015224f937160478
+        uses: suisei-cn/actions-download-file@9f75b8c2dad5ccced7509c44a3b881c5613abde2 # v1.6.1
         with:
           url: "https://img.youtube.com/vi/${{github.event.inputs.video-id}}/mqdefault.jpg"
           target: assets/images/posts/${{env.DATE}}/
@@ -140,10 +140,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Ruby
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4 # v1.207.0
+        uses: ruby/setup-ruby@afeafc3d1ab54a631816aba4c914a0081c12ff2f # v1.310.0
         with:
           ruby-version: '3.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
@@ -151,7 +151,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
@@ -161,7 +161,7 @@ jobs:
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
 
   deploy:
     environment:
@@ -178,4 +178,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
