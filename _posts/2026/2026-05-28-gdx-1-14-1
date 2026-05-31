@@ -18,7 +18,7 @@ tags:
 
 categories: news
 ---
-If you are looking for past changelogs, check out [this](/news/changelog/) page.
+If you are looking for past changelogs, check out [this](/news/changelog/) page. 
 {: .notice--primary .no-top-margin }
 
 libGDX 1.14.1 has been released with plenty of bug fixes and new features. See the changelog below for a complete overview.
